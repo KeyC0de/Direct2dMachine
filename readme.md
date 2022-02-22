@@ -1,16 +1,12 @@
+<h1 align="center">
+	<a href="https://github.com/KeyC0de/Direct2dMachine">Direct 2d Machine</a>
+</h1>
+
+
+Create simple colorful, beautiful 2d Graphics & bitmaps with Windows (Win32) & Direct2d.
 
 
 
+# License
 
-# Acknowledgements
-
-<p>Bethesda & Obsidian Entertainment for Fallout.<p>
-<p>3ds Max for model creation.<p>
-<p>Substance Painter for Texturing.<p>
-<p>Nifskope and Bethesda's GECK and Creation Kit for configuring assets into the game.
-<p>Adobe Photoshop for the graphics.<p>
-<p>The Fallout New Vegas silenced gunshot sound effect from freesound.org by Morgan Purkis link.<p>
-<p>Inventory icon: Gun with silencer by jeroen van den bogaert from the Noun Project link.<p>
-<p>fnvedit.<p>
-
-<p>I have procured permission from Warner Brothers to use their "Cobra 1986" theme gun for this video game modification.</p>
+Distributed under the GNU GPL V3 License. See "GNU GPL license.txt" for more information.
