@@ -8,7 +8,8 @@
 #include "key_math.h"
 #include "sprite.h"
 #if defined _DEBUG && !defined NDEBUG
-#	include <vld.h>
+#	pragma comment( lib, "C:/Program Files (x86)/Visual Leak Detector/lib/Win64/vld.lib" )
+#	include <C:/Program Files (x86)/Visual Leak Detector/include/vld.h>
 #endif
 
 #pragma comment( linker, "/SUBSYSTEM:WINDOWS" )
@@ -138,10 +139,9 @@ int WINAPI wWinMain( _In_ HINSTANCE hInstance,
 
 	KeyConsole& console = KeyConsole::getInstance();
 	console.resetInstance();
-	if ( IsDebuggerPresent() )
-	{
-		__debugbreak();
-	}
+#if defined _DEBUG && !defined NDEBUG
+	while ( !getchar() );
+#endif
 	return exitCode;
 }
 

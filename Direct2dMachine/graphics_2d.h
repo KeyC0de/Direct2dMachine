@@ -18,7 +18,6 @@ class Graphics2D
 	Microsoft::WRL::ComPtr<IDWriteTextFormat> m_pTextFormat;
 public:
 	Graphics2D( HWND hWnd );
-	
 	Graphics2D( const Graphics2D& rhs ) = delete;
 	Graphics2D& operator=( const Graphics2D& rhs ) = delete;
 	Graphics2D( Graphics2D&& rhs ) noexcept;
@@ -27,10 +26,8 @@ public:
 	void beginDraw();
 	void endDraw();
 	void clear( const D2D1::ColorF& rgb );
-
 	void createTextFormat( const std::wstring& fontName = L"Arial", float fontSize = 24.0f,
 		const std::wstring& fontLocale = L"en-us" );
-
 	void drawLine( const D2D1_POINT_2F& v0, const D2D1_POINT_2F& v1,
 		const D2D1::ColorF& rgba, int strokeWidth = 1 );
 	void drawRect( const D2D1_RECT_F& rect, const D2D1::ColorF& rgba,
@@ -43,6 +40,5 @@ public:
 		int strokeWidth = 1 );
 	void drawText( const std::wstring& txt, const D2D1_RECT_F& rect,
 		const D2D1::ColorF& rgba );
-
 	ID2D1HwndRenderTarget* getRenderTarget() const noexcept;
 };
